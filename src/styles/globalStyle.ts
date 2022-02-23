@@ -43,6 +43,10 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
+    li {
+        list-style-type: none;
+    }
+
     span, button, p  {
         color: #949494;
     }

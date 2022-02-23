@@ -17,7 +17,7 @@ export function Footer() {
           </ListServices>
 
           <ListContato>
-            <span>Contato</span>
+            <span style={{textAlign: 'center'}}>Contato</span>
             <ul>
               <li>E-mail: <span>nky-contato@outlook.com</span></li>
               <li>Tel: <span>+55 (35) 98812-6239</span></li>

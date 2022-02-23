@@ -23,8 +23,7 @@ export const ListServices = styled.div`
   ul {
     margin-top: 1rem;
       li {
-      margin-top: .3rem;
-
+        margin-top: .3rem;
       span {
         font-size: 1rem;
       }
@@ -40,14 +39,11 @@ export const ListServices = styled.div`
 export const ListContato = styled.div`
   justify-self: center;
   color: #949494;
+
   ul {
     margin-top: 1rem;
     li {
       margin-top: .3rem;
-      text-decoration: none;
-      list-style: none;
-      list-style-type: none;
-
       span {
         font-size: 1rem;
       }
@@ -68,7 +64,6 @@ export const ListTime = styled.div`
     li {
       list-style: none;
       margin-top: .3rem;
-
       span {
         font-size: 1rem;
       }

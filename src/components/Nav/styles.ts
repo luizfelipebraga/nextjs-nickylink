@@ -4,7 +4,7 @@ export const Header = styled.header`
   width: 100%;
   /* background-color: var(--white); */
 
-  padding: 1.5rem;
+  padding: 1rem;
   border-bottom: 1px solid #252525;
 `;
 
@@ -15,6 +15,15 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+`;
+
+export const BoxImage = styled.div`
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 `;
 
 export const Ul = styled.ul`

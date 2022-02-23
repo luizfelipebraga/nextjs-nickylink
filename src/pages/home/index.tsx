@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import Logo from '../../assets/large-logo.png';
-import { Aside, BoxImage, Container, ImageStyled, SocialMedias, Title, TitleSection } from "../../styles/home/styles";
+import { Aside, BoxImage, Container, SocialMedias, TitleSection } from "../../styles/home/styles";
 
 const HomePage: NextPage = () => {
   return (
@@ -9,25 +9,25 @@ const HomePage: NextPage = () => {
 
       <TitleSection>
         <Aside>
-          <Title>
             <span>Olá, Eu sou</span>
-            <h1>Eric Ferreira</h1>
-            <p>Designer Gráfico / Editor </p>
-          </Title>
-
-          <BoxImage>
-          <Image src={Logo} alt="photo" />
-        </BoxImage>
+            <div>
+              <h1>Eric Ferreira</h1>
+              <p>Designer Gráfico / Editor </p>
+            </div>
         </Aside>
 
-        
+        <BoxImage>
+            <Image src={Logo} alt="photo" />
+        </BoxImage>
+
+      </TitleSection>
+
 
         <SocialMedias>
-            <span>Email</span>
-            <span>Tel: +55 (35) 98812-6239</span>
-            <span>Twitter humilde</span>
-          </SocialMedias>
-      </TitleSection>
+          <span>Email</span>
+          <span>Tel: +55 (35) 98812-6239</span>
+          <span>Twitter humilde</span>
+        </SocialMedias>
     </Container>
   )
 }

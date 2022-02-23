@@ -13,7 +13,7 @@ const HomePage: NextPage = () => {
         <Aside>
           <span>Olá, Eu sou</span>
           <div>
-            <h1>Eric Ferreira</h1>
+            <h1>Eric "Nkylink" Ferreira</h1>
             <p>Designer Gráfico / Editor </p>
           </div>
         </Aside>
@@ -25,11 +25,11 @@ const HomePage: NextPage = () => {
 
       <SocialMedias>
         <a href="mailto:nky-contato@outlook.com" target="_blank">
-          <Image src={EmailImg} alt="email" height={40} width={40}/>
+          <Image src={EmailImg} alt="email" height={30} width={30}/>
         </a>
 
         <a href="https://twitter.com/nkylink" target="_blank">
-          <Image src={TwitterImg} alt="twitter" height={40} width={40} />
+          <Image src={TwitterImg} alt="twitter" height={30} width={30} />
         </a>
       </SocialMedias>
     </Container>

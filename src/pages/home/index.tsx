@@ -1,14 +1,33 @@
 import { NextPage } from "next";
-import Head from "next/head";
 import Image from "next/image";
-import Logo from '../../assets/logo.webp';
-import { Container } from "./styles";
+import Logo from '../../assets/large-logo.png';
+import { Aside, BoxImage, Container, ImageStyled, SocialMedias, Title, TitleSection } from "./styles";
 
 const HomePage: NextPage = () => {
   return (
     <Container>
-      <span>ola</span>
-      <Image src={Logo}/>
+
+      <TitleSection>
+        <Aside>
+          <Title>
+            <span>Olá, Eu sou</span>
+            <h1>Eric Ferreira</h1>
+            <p>Designer Gráfico / Editor </p>
+          </Title>
+
+          <BoxImage>
+          <Image src={Logo} alt="photo" />
+        </BoxImage>
+        </Aside>
+
+        
+
+        <SocialMedias>
+            <span>Email</span>
+            <span>Tel: +55 (35) 98812-6239</span>
+            <span>Twitter humilde</span>
+          </SocialMedias>
+      </TitleSection>
     </Container>
   )
 }

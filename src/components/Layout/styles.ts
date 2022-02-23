@@ -10,6 +10,4 @@ export const Container = styled.div`
 export const Content = styled.main`
   min-height: 100vh;
   width: 100%;
-
-  background: #f8f8f8;
 `;

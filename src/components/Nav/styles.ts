@@ -1,15 +1,15 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Header = styled.header`
   width: 100%;
-  background-color: var(--white);
+  /* background-color: var(--white); */
 
   padding: 1rem 1.5rem;
+  border-bottom: 1px solid #252525;
 `;
 
 export const Nav = styled.nav`
   width: 100%;
-  background-color: var(--white);
   max-width: 1200px;
   margin: 0px auto;
   display: flex;
@@ -19,18 +19,15 @@ export const Nav = styled.nav`
 
 export const Ul = styled.ul`
   display: flex;
-  gap: 1.5rem;
-  a {
+  gap: 2rem;
+  a:not(:last-child) {
     color: rgb(135, 135, 135);
     font-size: 1rem;
+    font-weight: 500;
     transition: all 100ms ease-out 0s;
 
     &:hover {
-      color: #000;
-      text-decoration-color: rgb(135, 135, 135);
-      text-decoration-line: underline;
-      text-underline-offset: 40px;
-      text-decoration-thickness: 3px;
-      }
+      color: var(--white);
+    }
   }
 `;

@@ -6,7 +6,7 @@ type InputProps = InputHTMLAttributes<HTMLInputElement>;
 export function ContatoButton({...props}: InputProps) {
   return (
     <Container {...props}>
-      <Button href="#">Request Invite</Button>
+      <Button href="#">Contate-me</Button>
     </Container>
   );
 }

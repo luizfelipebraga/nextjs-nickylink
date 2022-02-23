@@ -8,16 +8,18 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.a`
-  background-image: linear-gradient(225deg, #252525, #252525);
-  color: var(--white);
+  background: #f8f8f8;
+  color: #252525;
+  border: 1px solid #000;
+
   font-size: 1rem;
   border-radius: 2rem;
-  padding: 1rem 3rem;
+  padding: .7rem 1.5rem;
   overflow: hidden;
   font-weight: bold;
   z-index: 1;
-  transition: filter 200ms ease;
   &:hover {
-    filter: brightness(1.5);
+    background: transparent;
+    color: var(--white);
   }
 `;

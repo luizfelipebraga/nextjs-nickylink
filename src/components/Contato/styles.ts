@@ -18,8 +18,11 @@ export const Button = styled.a`
   overflow: hidden;
   font-weight: bold;
   z-index: 1;
+  transition: all 0.1s ease-in-out;
+
   &:hover {
     background: transparent;
     color: var(--white);
+    border-color: var(--white);
   }
 `;

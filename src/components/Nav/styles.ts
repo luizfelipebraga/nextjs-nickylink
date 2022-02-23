@@ -4,7 +4,7 @@ export const Header = styled.header`
   width: 100%;
   /* background-color: var(--white); */
 
-  padding: 1rem 1.5rem;
+  padding: 1.5rem;
   border-bottom: 1px solid #252525;
 `;
 

@@ -13,7 +13,7 @@ const HomePage: NextPage = () => {
         <Aside>
           <span>Olá, Eu sou</span>
           <div>
-            <h1>Eric "Nkylink" Ferreira</h1>
+            <h1>Eric &quot;Nkylink&quot; Ferreira</h1>
             <p>Designer Gráfico / Editor </p>
           </div>
         </Aside>

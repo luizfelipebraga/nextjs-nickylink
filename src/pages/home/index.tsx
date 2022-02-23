@@ -24,11 +24,11 @@ const HomePage: NextPage = () => {
       </TitleSection>
 
       <SocialMedias>
-        <a href="mailto:nky-contato@outlook.com" target="_blank">
+        <a href="mailto:nky-contato@outlook.com" target="_blank" rel="noreferrer">
           <Image src={EmailImg} alt="email" height={30} width={30}/>
         </a>
 
-        <a href="https://twitter.com/nkylink" target="_blank">
+        <a href="https://twitter.com/nkylink" target="_blank" rel="noreferrer">
           <Image src={TwitterImg} alt="twitter" height={30} width={30} />
         </a>
       </SocialMedias>

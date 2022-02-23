@@ -50,7 +50,7 @@ export const GlobalStyle = createGlobalStyle`
         line-height: 1.8rem;
     }
     b, strong {
-        color: #000;
+        color: #fff;
     }
     textarea {
         resize: none;

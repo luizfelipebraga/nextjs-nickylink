@@ -2,10 +2,9 @@ import styled from 'styled-components';
 import Image from 'next/image';
 
 export const Container = styled.div`
-  min-height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px 0 150px;
 `;
 
 export const TitleSection = styled.section`
@@ -44,10 +43,7 @@ export const Title = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  
-  
 `;
-
 
 export const BoxImage = styled.div`
   width: 500px;
@@ -60,8 +56,20 @@ export const ImageStyled = styled(Image)`
 
 export const SocialMedias = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 3rem;
+  flex-direction: row;
+  gap: 2rem;
+
+  a {
+    display: flex;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+    padding: 1rem;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+    
+  }
 `;
 

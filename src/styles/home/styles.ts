@@ -23,7 +23,7 @@ export const Title = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-
+  
   span {
     font-weight: 500;
     color: #f8f8f8;

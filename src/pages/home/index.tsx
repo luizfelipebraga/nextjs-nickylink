@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import Logo from '../../assets/large-logo.png';
-import { Aside, BoxImage, Container, ImageStyled, SocialMedias, Title, TitleSection } from "./styles";
+import { Aside, BoxImage, Container, ImageStyled, SocialMedias, Title, TitleSection } from "../../styles/home/styles";
 
 const HomePage: NextPage = () => {
   return (

@@ -1,11 +1,11 @@
-import { Container, Grid, ListContato, ListServices, ListTime, Main, ReservedRights } from "./styles";
+import { Container, Grid, List, Main, ReservedRights } from "./styles";
 
 export function Footer() {
   return (
     <Container>
       <Main>
         <Grid>
-          <ListServices>
+          <List>
             <span>Servi&ccedil;os</span>
             <ul>
               <li>Edi&ccedil;&atilde;o</li>
@@ -14,18 +14,18 @@ export function Footer() {
               <li>Fotografia</li>
               <li>Rede Social</li>
             </ul>
-          </ListServices>
+          </List>
 
-          <ListContato>
-            <span style={{textAlign: 'center'}}>Contato</span>
+          <List>
+            <span style={{ textAlign: 'center' }}>Contato</span>
             <ul>
               <li>E-mail: <span>nky-contato@outlook.com</span></li>
               <li>Tel: <span>+55 (35) 98812-6239</span></li>
               <li>Twitter: <span>nyklink</span></li>
             </ul>
-          </ListContato>
+          </List>
 
-          <ListTime>
+          <List>
             <span>Time</span>
             <ul>
               <li>Eric Ferreira</li>
@@ -33,7 +33,7 @@ export function Footer() {
               <li>Jo&atilde;o Vitor</li>
               <li>Rafael</li>
             </ul>
-          </ListTime>
+          </List>
         </Grid>
         <ReservedRights><strong>&copy; 2022 Eric Ferreira</strong> All Rights Reserved.</ReservedRights>
       </Main>

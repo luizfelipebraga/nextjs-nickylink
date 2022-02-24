@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.footer`
   background: #0d0d0e;
@@ -11,65 +11,30 @@ export const Main = styled.main`
 `;
 
 export const Grid = styled.div`
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr minmax(0, 300px) 1fr;
+  list-style: none;
   padding: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  position: relative;
 `;
 
-export const ListServices = styled.div`
+export const List = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-self: center;
   color: #949494;
-  ul {
-    margin-top: 1rem;
-      li {
-        margin-top: .3rem;
-      span {
-        font-size: 1rem;
-      }
-    }
-  }
-  
-  span {
-    font-size: 1.6rem;
-    color: #fff;
-  }
-`;
-
-export const ListContato = styled.div`
-  justify-self: center;
-  color: #949494;
-
   ul {
     margin-top: 1rem;
     li {
-      margin-top: .3rem;
+      margin-top: 0.3rem;
       span {
         font-size: 1rem;
       }
     }
   }
-  
-  span {
-    font-size: 1.6rem;
-    color: #fff;
-  }
-`;
 
-export const ListTime = styled.div`
-  color: #949494;
-  justify-self: center;
-  ul {
-    margin-top: 1rem;
-    li {
-      list-style: none;
-      margin-top: .3rem;
-      span {
-        font-size: 1rem;
-      }
-    }
-  }
-  
   span {
     font-size: 1.6rem;
     color: #fff;

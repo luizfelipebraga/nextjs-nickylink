@@ -2,6 +2,12 @@ import styled from 'styled-components';
 import Image from 'next/image';
 
 export const Container = styled.div`
+  height: 100%;
+  width: 100%;
+`;
+
+export const HomeSection = styled.section`
+  min-height: 90vh;
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px 0 150px;
@@ -73,3 +79,12 @@ export const SocialMedias = styled.div`
   }
 `;
 
+export const MarketingSection = styled.section`
+  height: 100vh;
+  width: 100%;
+  background: #f2f2f2;
+  
+
+  display: flex;
+  justify-content: center;
+`;

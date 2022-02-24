@@ -55,6 +55,9 @@ export const Topic = styled.div`
 `;
 
 export const WrapperCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 `;
 
 export const Card = styled.div`

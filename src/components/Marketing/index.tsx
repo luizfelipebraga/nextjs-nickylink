@@ -28,9 +28,17 @@ export default function MarketingContent() {
       </Topics>
 
       <WrapperCard>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
+        <Card>
+
+        </Card>
+
+        <Card>
+
+        </Card>
+        
+        <Card>
+
+        </Card>
       </WrapperCard>
     </Container>
   )

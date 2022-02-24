@@ -80,11 +80,10 @@ export const SocialMedias = styled.div`
 `;
 
 export const MarketingSection = styled.section`
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background: #f2f2f2;
   
-
   display: flex;
   justify-content: center;
 `;

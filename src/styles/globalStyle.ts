@@ -48,7 +48,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     span, button, p  {
-        color: #949494;
+        color: #878788;
     }
     p {
         line-height: 1.8rem;

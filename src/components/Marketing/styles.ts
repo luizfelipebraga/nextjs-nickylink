@@ -53,3 +53,9 @@ export const Topic = styled.div`
     font-size: .978rem;
   }
 `;
+
+export const WrapperCard = styled.div`
+`;
+
+export const Card = styled.div`
+`;

@@ -3,8 +3,10 @@ import Head from 'next/head'
 import { Layout } from '../components/Layout'
 import { GlobalStyle } from '../styles/globalStyle'
 import IndexPage from './index';
+import config from 'react-reveal/globals';
 
 function MyApp({ Component, pageProps }: AppProps) {
+  config({ ssrFadeout: true });
   return (
     <>
       <GlobalStyle />

@@ -1,4 +1,4 @@
-import { Container, Topics, Topic } from "./styles";
+import { Container, Topics, Topic, WrapperCard, Card } from "./styles";
 
 export default function MarketingContent() {
   return (
@@ -25,8 +25,13 @@ export default function MarketingContent() {
           <h3>90% dos Consumidores</h3>
           <p>Afirmam os videos ajudam na decisão de uma compra.</p>
         </Topic>
-
       </Topics>
+
+      <WrapperCard>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+      </WrapperCard>
     </Container>
   )
 }

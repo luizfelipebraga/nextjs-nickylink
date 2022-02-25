@@ -40,8 +40,11 @@ export const Topics = styled.div`
 export const Topic = styled.div`
   max-width: 300px;
   padding: 1rem;
-  border: 1px solid #949494;
+  border: 1px solid rgb(148, 148, 148);
+  border-top: 0.4rem solid rgb(148, 148, 148);
   border-radius: 5px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 
   h3 {
     font-weight: 500;

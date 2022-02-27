@@ -60,8 +60,7 @@ export const Topic = styled.div`
 export const WrapperCard = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 5rem;
-`;
+  gap: 3rem;
 
-export const Card = styled.div`
+  margin-top: 4rem;
 `;

@@ -13,7 +13,7 @@ export const Title = styled.div`
     position: relative;
     white-space: nowrap;
     gap: 10px;
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: rgb(242, 242, 242);
   
     &:after {

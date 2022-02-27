@@ -2,9 +2,22 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 5rem;
   background: #f7f7f9;
+
+  @media (max-width: 1200px) {
+    img {
+      display: none;
+    }
+  }
+`;
+
+export const BoxImage = styled.div`
+  @media (max-width: 1200px) {
+    display: none;
+  }
 `;
 
 export const TitleDescription = styled.div`

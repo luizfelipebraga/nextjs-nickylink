@@ -89,8 +89,8 @@ export const MarketingSection = styled.section`
 `;
 
 export const ServiceSection = styled.section`
-  height: 100%;
+  min-height: 100vh;
+  padding: 8rem 0;
   width: 100%;
   background: #18181b;
-  
 `;

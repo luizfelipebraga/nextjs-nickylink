@@ -6,6 +6,7 @@ import Logo from '../../assets/large-logo.png';
 import { Aside, BoxImage, Container, SocialMedias, TitleSection, HomeSection, MarketingSection, ServiceSection } from "../../styles/home/styles";
 import Fade from 'react-reveal/Fade';
 import MarketingContent from "../../components/Marketing";
+import ServiceContent from "../../components/Service";
 
 const HomePage: NextPage = () => {
   return (
@@ -43,7 +44,7 @@ const HomePage: NextPage = () => {
       </MarketingSection>
 
       <ServiceSection>
-
+        <ServiceContent />
       </ServiceSection>
 
     </Container>

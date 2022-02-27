@@ -29,10 +29,9 @@ export const Container = styled.div`
 
 export const Topics = styled.div`
   display: flex;
-  align-items: stretch;
+  justify-content: center;
   text-align: center;
-  gap: 2rem;
-  justify-content: space-between;
+  gap: 3rem;
 
   margin-top: 4rem;
 `;

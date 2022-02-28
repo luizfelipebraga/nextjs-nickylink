@@ -13,7 +13,6 @@ const HomePage: NextPage = () => {
     <Container>
       <HomeSection>
         <TitleSection>
-          <Fade left>
             <Aside>
               <span>Olá, Eu sou</span>
               <div>
@@ -21,7 +20,6 @@ const HomePage: NextPage = () => {
                 <p>Designer Gráfico / Editor </p>
               </div>
             </Aside>
-          </Fade>
 
           <BoxImage>
             <Image src={Logo} alt="photo" />

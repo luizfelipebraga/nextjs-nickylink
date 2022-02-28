@@ -54,14 +54,12 @@ export const GlobalStyle = createGlobalStyle`
         line-height: 1.8rem;
     }
     b, strong {
-        color: #fff;
+        color: #f4f4f4;
     }
     textarea {
         resize: none;
     }
-    .glider-dot.active {
-        background: #041e50;
-    }
+    
     input:-webkit-autofill,
     input:-webkit-autofill:hover,
     input:-webkit-autofill:focus,

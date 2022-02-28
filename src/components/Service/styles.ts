@@ -7,11 +7,10 @@ export const Container = styled.div`
 `;
 
 export const Subtitle = styled.div`
-  margin-top: 5rem;
+  max-width: 55rem;
+  margin: 0 auto;
+  margin-top: 3rem;
   p {
-    text-align: center;
-    font-size: 1.3rem;
-    color: rgb(242,242,242);;
-    line-height: 2rem;
+    font-weight: 400;
   }
 `;

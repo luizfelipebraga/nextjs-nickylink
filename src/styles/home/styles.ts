@@ -90,7 +90,7 @@ export const MarketingSection = styled.section`
 
 export const ServiceSection = styled.section`
   min-height: 100vh;
-  padding: 8rem 0;
+  padding: 8rem 1rem;
   width: 100%;
   background: #18181b;
 `;

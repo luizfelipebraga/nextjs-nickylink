@@ -2,7 +2,7 @@ import Image from "next/image"
 import { Container, Description, TitleDescription, Title, BoxImage } from "./styles"
 
 type CardProps = {
-  img: StaticImageData;
+  img: string;
   title: string;
   description: string;
 }
@@ -11,9 +11,7 @@ type CardProps = {
 export default function MarketingCard({ img, title, description }: CardProps) {
   return (
     <Container>
-      <BoxImage>
-        <Image src={img} alt="imagem para negócio" objectFit="cover" />
-      </BoxImage>
+        <img src={img} alt="imagem para negócio" />
       <TitleDescription>
         <Title>{title}</Title>
         <Description>{description}</Description>

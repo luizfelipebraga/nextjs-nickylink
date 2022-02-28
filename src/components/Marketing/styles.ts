@@ -6,7 +6,7 @@ export const Container = styled.div`
   margin-bottom: 2rem;
   background: #fff;
   padding: 2.5rem;
-
+  
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   h2 {
@@ -22,7 +22,7 @@ export const Container = styled.div`
     font-size: 1.1rem;
     max-width: 840px;
     margin-top: 2rem;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
   }
 `;
@@ -51,7 +51,7 @@ export const Topic = styled.div`
   }
 
   p {
-    font-weight: 500;
+    font-weight: 400;
     font-size: .9rem;
   }
 `;

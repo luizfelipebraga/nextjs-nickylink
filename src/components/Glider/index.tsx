@@ -11,9 +11,9 @@ export function Slider() {
   useIsomorphicLayoutEffect(() => { });
   return (
     <Container>
-      <Glider slidesToShow={2} hasArrows hasDots>
-        <VideoComponent video='/videos/abertura.mp4' />
-        <VideoComponent video='/videos/portugal.mp4' />
+      <Glider slidesToShow={1} hasArrows hasDots>
+        <VideoComponent video='/videos/abertura-reduced.mp4' />
+        <VideoComponent video='/videos/abertura-reduced.mp4' />
         <div className="slide">2</div>
         <div className="slide">3</div>
         <div className="slide">4</div>

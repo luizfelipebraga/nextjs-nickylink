@@ -8,12 +8,11 @@ export function Slider() {
   const canUseDOM = typeof window !== 'undefined';
   const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
 
-  useIsomorphicLayoutEffect(() => { });
+  useIsomorphicLayoutEffect(() => {});
   return (
     <Container>
       <Glider slidesToShow={1} hasArrows hasDots>
-        <VideoComponent video='/videos/abertura-reduced.mp4' />
-        <VideoComponent video='/videos/abertura-reduced.mp4' />
+        {/* <VideoComponent video='/videos/abertura-reduced.mp4' /> */}
         <div className="slide">2</div>
         <div className="slide">3</div>
         <div className="slide">4</div>

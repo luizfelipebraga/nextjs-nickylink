@@ -10,6 +10,9 @@ export const GlobalStyle = createGlobalStyle`
 
   :root {
     //Primary
+    --bg: #18181b;
+    --text-p: #878788;
+    --text-bold: #f4f4f4;
     --darkBlue: hsl(233, 26%, 24%);
     --lightGreen: hsl(136, 65%, 51%);
     --lightCyan: hsl(192, 70%, 51%);
@@ -25,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
         width : 100%;
         overflow-x: hidden;
         scroll-behavior: smooth;
-        background: #18181b;
+        background: var(--bg);
     }
 
     body {
@@ -33,13 +36,12 @@ export const GlobalStyle = createGlobalStyle`
             width: .5rem;
         }
         &::-webkit-scrollbar-track {
-        background: #0d0d0e;
+            background: var(--bg);
         }
         &::-webkit-scrollbar-thumb {
-        background-color: #fff;
-        width: 1rem;
-        border-radius: 1rem;
-        border: 1px solid #000;
+            background-color: var(--white);
+            width: 1rem;    
+            border-radius: 1rem;
         }
     }
 
@@ -48,13 +50,13 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     span, button, p  {
-        color: #878788;
+        color: var(--text-p);
     }
     p {
         line-height: 1.8rem;
     }
     b, strong {
-        color: #f4f4f4;
+        color: var(--text-bold);
     }
     textarea {
         resize: none;
@@ -64,7 +66,7 @@ export const GlobalStyle = createGlobalStyle`
     input:-webkit-autofill:hover,
     input:-webkit-autofill:focus,
     input:-webkit-autofill:active {
-        color: #fff;
+        color: var(--white);
         transition: all 5000s ease-in-out 0s;
     }
     textarea, select, input, textarea, select:focus, button{

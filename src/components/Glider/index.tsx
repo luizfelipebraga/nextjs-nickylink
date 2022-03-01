@@ -1,19 +1,19 @@
-import { Container, Box, Image, DarkBackground } from "./styles";
+import { Container } from "./styles";
 import Glider from "react-glider";
 import "glider-js/glider.min.css";
+import { VideoComponent } from "../Video";
+import { useEffect, useLayoutEffect } from "react";
 
 export function Slider() {
+  const canUseDOM = typeof window !== 'undefined';
+  const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
+
+  useIsomorphicLayoutEffect(() => { });
   return (
     <Container>
       <Glider slidesToShow={2} hasArrows hasDots>
-        <Box>
-          <Image>
-          <DarkBackground>
-            <span>Instrumentos</span>
-            <span>Profissionais</span>
-          </DarkBackground>
-          </Image>
-        </Box>
+        <VideoComponent video='/videos/abertura.mp4' />
+        <VideoComponent video='/videos/portugal.mp4' />
         <div className="slide">2</div>
         <div className="slide">3</div>
         <div className="slide">4</div>

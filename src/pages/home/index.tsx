@@ -4,7 +4,6 @@ import TwitterImg from '../../assets/fa-twitter.svg';
 import EmailImg from '../../assets/fa-email.svg';
 import Logo from '../../assets/large-logo.png';
 import { Aside, BoxImage, Container, SocialMedias, TitleSection, HomeSection, MarketingSection, ServiceSection } from "../../styles/home/styles";
-import Fade from 'react-reveal/Fade';
 import MarketingContent from "../../components/Marketing";
 import ServiceContent from "../../components/Service";
 

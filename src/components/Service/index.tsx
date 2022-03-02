@@ -2,14 +2,13 @@ import TitleComponent from "../Title";
 import { Container, Main, Subtitle } from "./styles";
 import Fade from 'react-reveal/Fade';
 import { Slider } from "../Glider";
+import { CompanyComponent } from "../Company";
 
 export default function ServiceContent() {
   return (
     <Container>
       <Main>
-        <Fade top>
-          <TitleComponent name="Serviços" />
-        </Fade>
+        <TitleComponent name="Serviços" />
         <Fade left>
           <Slider />
         </Fade>
@@ -20,6 +19,8 @@ export default function ServiceContent() {
             </p>
           </Subtitle>
         </Fade>
+
+        <CompanyComponent />
       </Main>
     </Container >
   )

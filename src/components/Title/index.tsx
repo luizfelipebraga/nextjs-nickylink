@@ -1,5 +1,6 @@
 import React from 'react'
 import { Title } from './styles'
+import Fade from 'react-reveal/Fade';
 
 type TitleProps = {
   name: string;
@@ -7,8 +8,10 @@ type TitleProps = {
 
 export default function TitleComponent({ name }: TitleProps) {
   return (
-    <Title>
-      <h2>{name}</h2>
-    </Title>
+    <Fade top>
+      <Title>
+        <h2>{name}</h2>
+      </Title>
+    </Fade>
   )
 }

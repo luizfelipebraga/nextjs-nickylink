@@ -7,18 +7,14 @@ interface VideoProps extends VideoHTMLAttributes<HTMLVideoElement> {
 
 export function VideoComponent({ ...props }: VideoProps) {
 
-  const canUseDOM: boolean = !!(
-    typeof window !== 'undefined' &&
-    typeof window.document !== 'undefined' &&
-    typeof window.document.createElement !== 'undefined'
-  );
-  
+  const canUseDOM = typeof window !== 'undefined';
   const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
+
+  useIsomorphicLayoutEffect(() => {});
 
   return (
     <Video
       autoPlay
-      controls
       loop
       muted>
       <source src={props.video} type="video/mp4" />

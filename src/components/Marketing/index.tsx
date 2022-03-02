@@ -60,7 +60,7 @@ export default function MarketingContent() {
         <WrapperCard>
           {
             cardMarkerting.map((card, index) => {
-              return <Fade left>
+              return <Fade left key={index}>
                 <CardMarketing
                   key={index}
                   title={card.title}

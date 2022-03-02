@@ -1,4 +1,5 @@
 import React, { VideoHTMLAttributes } from "react";
+import { Video } from "./styles";
 
 interface VideoProps extends VideoHTMLAttributes<HTMLVideoElement> {
   video: string;
@@ -6,20 +7,12 @@ interface VideoProps extends VideoHTMLAttributes<HTMLVideoElement> {
 
 export function VideoComponent({ ...props }: VideoProps) {
   return (
-    <video
+    <Video
       autoPlay
       controls
-      width="250"
       loop
-      muted
-      style={{
-        position: "relative",
-        width: "100%",
-        height: "15rem",
-        left: 0,
-        top: 0,
-      }}>
+      muted>
       <source src={props.video} type="video/mp4" />
-    </video>
+    </Video>
   )
 }

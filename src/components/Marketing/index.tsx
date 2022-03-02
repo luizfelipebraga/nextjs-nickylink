@@ -1,8 +1,6 @@
 import CardMarketing from "../Cards/Marketing";
-import { Container, Topics, Topic, WrapperCard } from "./styles";
-import img1 from '../../assets/mark1.webp';
-import img2 from '../../assets/mark2.webp';
-import img3 from '../../assets/mark3.webp';
+import { Container, Topics, Topic, WrapperCard, Main } from "./styles";
+import Fade from 'react-reveal/Fade';
 
 type CardProps = {
   title: string;
@@ -34,42 +32,46 @@ export default function MarketingContent() {
 
   return (
     <Container>
-      <h2>Por que marketing de vídeo é importante para o seu negócio?</h2>
-      <p>Existem centenas de razões pelas quais os
-        profissionais de marketing digital devem escolher criar vídeos,
-        mas algumas das estatísticas mais impressionantes que comprovam a importância
-        do vídeo no marketing digital são:
-      </p>
+      <Main>
+        <h2>Por que marketing de vídeo é importante para o seu negócio?</h2>
+        <p>Existem centenas de razões pelas quais os
+          profissionais de marketing digital devem escolher criar vídeos,
+          mas algumas das estatísticas mais impressionantes que comprovam a importância
+          do vídeo no marketing digital são:
+        </p>
 
-      <Topics>
-        <Topic>
-          <h3>97% dos Profissionais de Marketing</h3>
-          <p>Afirmam que os videos ajudam seus clientes a entender melhor seus produtos.</p>
-        </Topic>
+        <Topics>
+          <Topic>
+            <h3>97% dos Profissionais de Marketing</h3>
+            <p>Afirmam que os videos ajudam seus clientes a entender melhor seus produtos.</p>
+          </Topic>
 
-        <Topic>
-          <h3>81% das Empresas</h3>
-          <p>Agora usam video parte de suas estratégias de marketing digital.</p>
-        </Topic>
+          <Topic>
+            <h3>81% das Empresas</h3>
+            <p>Agora usam video parte de suas estratégias de marketing digital.</p>
+          </Topic>
 
-        <Topic>
-          <h3>90% dos Consumidores</h3>
-          <p>Afirmam os videos ajudam na decisão de uma compra.</p>
-        </Topic>
-      </Topics>
+          <Topic>
+            <h3>90% dos Consumidores</h3>
+            <p>Afirmam os videos ajudam na decisão de uma compra.</p>
+          </Topic>
+        </Topics>
 
-      <WrapperCard>
-        {
-          cardMarkerting.map((card, index) => {
-            return <CardMarketing
-              key={index}
-              title={card.title}
-              img={card.img}
-              description={card.description}
-            />
-          })
-        }
-      </WrapperCard>
+        <WrapperCard>
+          {
+            cardMarkerting.map((card, index) => {
+              return <Fade left>
+                <CardMarketing
+                  key={index}
+                  title={card.title}
+                  img={card.img}
+                  description={card.description}
+                />
+              </Fade>
+            })
+          }
+        </WrapperCard>
+      </Main>
     </Container>
   )
 }

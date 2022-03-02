@@ -12,18 +12,14 @@ export function Slider() {
   return (
     <Container>
       <Glider slidesToShow={1} hasArrows hasDots>
-        {/* <VideoComponent video='/videos/abertura-reduced.mp4' /> */}
-        <div className="slide">2</div>
-        <div className="slide">3</div>
-        <div className="slide">4</div>
-        <div className="slide">5</div>
-        <div className="slide">6</div>
-        <div className="slide">7</div>
-        <div className="slide">8</div>
-        <div className="slide">9</div>
-        <div className="slide">10</div>
-        <div className="slide">11</div>
-        <div className="slide">12</div>
+        <VideoComponent video='/videos/Empresa/spain.mp4' />
+        <VideoComponent video='/videos/Empresa/diligente.m4v' />
+        <VideoComponent video='/videos/Empresa/logo-zoom.m4v' />
+        <VideoComponent video='/videos/Empresa/RemaxPromo.m4v' />
+        <VideoComponent video='/videos/Empresa/RumoAoTopoLivestream.mp4' />
+        <VideoComponent video='/videos/Empresa/Slide-Conferecondominios.m4v' />
+        <VideoComponent video='/videos/BornIntro.mp4' />
+        <VideoComponent video='/videos/liga-brasileira.mp4' />
       </Glider>
     </Container>
   );

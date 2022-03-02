@@ -3,7 +3,7 @@ import Image from "next/image";
 import TwitterImg from '../../assets/fa-twitter.svg';
 import EmailImg from '../../assets/fa-email.svg';
 import Logo from '../../assets/large-logo.png';
-import { Aside, BoxImage, Container, SocialMedias, TitleSection, HomeSection, MarketingSection, ServiceSection } from "../../styles/home/styles";
+import { Aside, BoxImage, Container, SocialMedias, TitleSection, HomeSection } from "../../styles/home/styles";
 import MarketingContent from "../../components/Marketing";
 import ServiceContent from "../../components/Service";
 
@@ -12,13 +12,13 @@ const HomePage: NextPage = () => {
     <Container>
       <HomeSection>
         <TitleSection>
-            <Aside>
-              <span>Olá, Eu sou</span>
-              <div>
-                <h1>Eric &quot;Nkylink&quot; Ferreira</h1>
-                <p>Designer Gráfico / Editor </p>
-              </div>
-            </Aside>
+          <Aside>
+            <span>Olá, Eu sou</span>
+            <div>
+              <h1>Eric &quot;Nkylink&quot; Ferreira</h1>
+              <p>Designer Gráfico / Editor </p>
+            </div>
+          </Aside>
 
           <BoxImage>
             <Image src={Logo} alt="photo" />
@@ -36,13 +36,9 @@ const HomePage: NextPage = () => {
         </SocialMedias>
       </HomeSection>
 
-      <MarketingSection>
-        <MarketingContent />
-      </MarketingSection>
+      <MarketingContent />
 
-      <ServiceSection>
-        <ServiceContent />
-      </ServiceSection>
+      <ServiceContent />
 
     </Container>
   )

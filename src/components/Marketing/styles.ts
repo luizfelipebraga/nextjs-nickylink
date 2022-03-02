@@ -1,6 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  height: 100%;
+  width: 100%;
+  background: #f2f2f2;
+  
+  display: flex;
+  justify-content: center;
+`;
+
+export const Main = styled.main`
   margin-top: -8rem;
   max-width: 1200px;
   margin-bottom: 2rem;

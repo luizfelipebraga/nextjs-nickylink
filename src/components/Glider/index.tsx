@@ -1,14 +1,12 @@
+import React from "react" 
 import { Container } from "./styles";
 import Glider from "react-glider";
 import "glider-js/glider.min.css";
 import { VideoComponent } from "../Video";
 import { useEffect, useLayoutEffect } from "react";
+React.useLayoutEffect = React.useEffect
 
 export function Slider() {
-  const canUseDOM = typeof window !== 'undefined';
-  const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
-
-  useIsomorphicLayoutEffect(() => {});
   return (
     <Container>
       <Glider slidesToShow={1} hasArrows hasDots>

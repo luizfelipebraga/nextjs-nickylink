@@ -2,7 +2,7 @@ import TitleComponent from "../Title";
 import { Container, Main, Subtitle } from "./styles";
 import Fade from 'react-reveal/Fade';
 import { Slider } from "../Glider";
-import { CompanyComponent } from "../Company";
+import { AudioVisualComponent } from "../AudioVisual";
 
 export default function ServiceContent() {
   return (
@@ -20,7 +20,7 @@ export default function ServiceContent() {
           </Subtitle>
         </Fade>
 
-        <CompanyComponent />
+        <AudioVisualComponent />
       </Main>
     </Container >
   )

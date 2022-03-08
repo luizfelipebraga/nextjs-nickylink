@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, VideoHTMLAttributes } from "react";
+import React, { VideoHTMLAttributes } from "react";
 import { Video } from "./styles";
 
 interface VideoProps extends VideoHTMLAttributes<HTMLVideoElement> {
@@ -6,12 +6,6 @@ interface VideoProps extends VideoHTMLAttributes<HTMLVideoElement> {
 };
 
 export function VideoComponent({ ...props }: VideoProps) {
-
-  const canUseDOM = typeof window !== 'undefined';
-  const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect;
-
-  useIsomorphicLayoutEffect(() => {});
-
   return (
     <Video
       autoPlay

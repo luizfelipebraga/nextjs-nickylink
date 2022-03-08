@@ -6,4 +6,8 @@ export const Video = styled.video`
   height: 100%;
   left: 0;
   top: 0;
+
+  @media (min-width: 1000px) {
+    object-fit: cover;
+  }
 `;

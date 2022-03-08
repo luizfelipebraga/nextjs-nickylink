@@ -1,12 +1,9 @@
 import styled from "styled-components";
-import Guitarra from '../../assets/guitarraVerde.jpg';
-
 
 export const Container = styled.div`
   .glider-dot {
     background-color: #878788;
   }
-
   .glider-dot.active {
     background: #fff;
   }
@@ -16,17 +13,18 @@ export const Container = styled.div`
     font-size: 5rem;
   }
   .glider-prev {
-    color: #fff;
+    left:-2.5rem;
   }
-
+  .glider-next {
+    right: -2.5rem;
+  }
   .glider {
     height: 30rem;
   }
   .glider-contain {
     background: #0d0d0d;
   }
-  .glider-dots {
-  }
+
   .glider-track {
     height: 100%;
   }

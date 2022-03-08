@@ -4,8 +4,8 @@ import TwitterImg from '../../assets/fa-twitter.svg';
 import EmailImg from '../../assets/fa-email.svg';
 import Logo from '../../assets/large-logo.png';
 import { Aside, BoxImage, Container, SocialMedias, TitleSection, HomeSection } from "../../styles/home/styles";
-import MarketingContent from "../../components/Marketing";
-import ServiceContent from "../../components/Service";
+import MarketingContent from "../../components/MarketingContent";
+import ServiceContent from "../../components/ServiceContent";
 
 const HomePage: NextPage = () => {
   return (

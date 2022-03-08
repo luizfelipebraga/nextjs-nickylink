@@ -31,3 +31,6 @@ export const Title = styled.div`
     }
   }
 `;
+
+export const Description = styled.p`
+`;

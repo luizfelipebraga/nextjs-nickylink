@@ -1,26 +1,39 @@
 import TitleComponent from '../Title';
-import { Container } from './styles';
+import { Container, Grid } from './styles';
 import Fade from 'react-reveal/Fade';
 import { useState } from 'react';
-
-
+import { CardCompany } from '../Cards/Company';
 
 export function AudioVisualComponent() {
 
   type CompanyProps = {
     image: string;
     title: string;
+    description: string;
   }
 
   const company: CompanyProps[] = [
     {
-      image: '',
-      title: ''
-    }
+      image: '/videos/thumb/diligente.png',
+      title: 'Diligente Company',
+      description: 'empresa bala'
+    },
+
+    {
+      image: '/videos/thumb/diligente.png',
+      title: 'Diligente Company',
+      description: 'empresa bala'
+    },
+
+    {
+      image: '/videos/thumb/diligente.png',
+      title: 'Diligente Company',
+      description: 'empresa bala'
+    },
   ];
 
   const getCompany = company.map((c, index) => {
-    return <CardCompany key={index} img={c.image} title={c.title} />
+    return <CardCompany key={index} image={c.image} title={c.title} description={c.description} />
   })
 
   return (
@@ -28,14 +41,7 @@ export function AudioVisualComponent() {
       <TitleComponent name="ÁudioVisual" subtitle="&#8595; Veja alguns dos meus trabalhos." />
       <Fade top>
         <Grid>
-          {
-
-
-            company.map((c, index) => {
-              <CardCompany key={index} img={c.image} title={c.title} />
-
-            })
-          }
+          {getCompany}
         </Grid>
       </Fade>
     </Container>

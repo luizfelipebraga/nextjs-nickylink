@@ -10,7 +10,7 @@ type CardCompanyProps = {
 
 export function CardCompany(props: CardCompanyProps) {
   return (
-    <a href={props.siteHref} target="_blank" rel="noopener">
+    <a href={props.siteHref} target="_blank" rel="noreferrer">
       <Container>
         <ImageStyled src={props.image} alt={props.title} width={400} height={300} />
         <Main>

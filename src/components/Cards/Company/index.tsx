@@ -15,7 +15,7 @@ export function CardCompany(props: CardCompanyProps) {
         <ImageStyled src={props.image} alt={props.title} width={400} height={300} />
         <Main>
           <h3>{props.title}</h3>
-          <p>{props.description.length > 100 ? props.description.substring(0, 100) + '. . .' : props.description}</p>
+          <p>{props.description.length > 150 ? props.description.substring(0, 100) + '. . .' : props.description}</p>
         </Main>
       </Container>
     </a>

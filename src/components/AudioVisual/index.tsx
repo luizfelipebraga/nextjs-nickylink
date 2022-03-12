@@ -24,14 +24,14 @@ export function AudioVisualComponent() {
       href: 'https://www.bniespana.com/',
       image: '/videos/thumb/bni.png',
       title: 'BNI ESPANA',
-      description: 'empresa bala'
+      description: 'Fundada en 1985, BNI® es una organización de redes empresariales probada y global. Nuestros miembros son profesionales de negocios que se ayudan mutuamente para hacer crecer sus negocios a través de su compromiso con nuestro principal valor central, Givers Gain®. Cada semana, en miles de comunidades en todo el mundo, los miembros se reúnen con otros líderes empresariales de confianza para construir y alimentar relaciones duraderas y aprobar referencias comerciales cualificadas.'
     },
 
     {
       href: 'https://conferecondominios.com/',
       image: '/videos/thumb/confere.png',
       title: 'Confere Condominios',
-      description: 'empresa bala'
+      description: 'A ConfereDominios tem como principal atividade a prestação de serviços de administração e gestão de Condomínios. A CONFERECONDOMíNIOS é um parceiro ativo dos Condomínios cuja administração lhe é confiada, pois com a sua disponibilidade e atuação contribui para o bom funcionamento e para as excelentes relações entre condóminos.'
     },
 
     {

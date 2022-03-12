@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const Container = styled.div`
   height: 30rem;
-  max-width: 22rem;
+  max-width: 20rem;
   background-color: #fff;
   border-radius: .5rem;
   margin-bottom: 2rem;
@@ -34,6 +34,6 @@ export const Main = styled.main`
   }
 
   p {
-    font-size: .9rem;
+    font-size: .89rem;
   }
 `;

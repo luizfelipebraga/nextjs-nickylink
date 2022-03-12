@@ -14,7 +14,7 @@ export function CardCompany(props: CardCompanyProps) {
       {props.siteHref.length > 1 ? (
         <Anchor href={props.siteHref} target="_blank" rel="noreferrer" hrefLenght={props.siteHref}>
           <Container>
-            <ImageStyled src={props.image} alt={props.title} width={400} height={250} />
+            <ImageStyled src={props.image} alt={props.title} width={400} height={250} loading="eager"/>
             <Main>
               <h3>{props.title}</h3>
               <p>{props.description.length > 150 ? props.description.substring(0, 100) + '. . .' : props.description}</p>
@@ -24,7 +24,7 @@ export function CardCompany(props: CardCompanyProps) {
       ) : (
         <Anchor href={void(0)} rel="noreferrer" hrefLenght={props.siteHref}>
           <Container>
-            <ImageStyled src={props.image} alt={props.title} width={400} height={250} />
+            <ImageStyled src={props.image} alt={props.title} width={400} height={250} loading="eager"/>
             <Main>
               <h3>{props.title}</h3>
               <p>{props.description.length > 150 ? props.description.substring(0, 100) + '. . .' : props.description}</p>

@@ -50,7 +50,7 @@ export function AudioVisualComponent() {
 
     {
       href: 'https://diligentversion.pt/',
-      image: '/videos/thumb/diligente.png',
+      image: '/videos/thumb/niuscup3.jpg',
       title: 'Niuscup',
       description: 'empresa bala'
     },

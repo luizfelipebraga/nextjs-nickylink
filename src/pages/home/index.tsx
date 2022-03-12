@@ -27,7 +27,7 @@ const HomePage: NextPage = () => {
 
         <SocialMedias>
           <a href="mailto:nky-contato@outlook.com" target="_blank" rel="noreferrer">
-            <Image src={EmailImg} alt="email" height={30} width={30} />
+            <Image src={EmailImg} alt="email" height={30} width={30} priority/>
           </a>
 
           <a href="https://twitter.com/nkylink" target="_blank" rel="noreferrer">

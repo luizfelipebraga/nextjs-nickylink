@@ -1,8 +1,17 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 
+interface AnchorProps {
+  hrefLenght: string;
+}
+
+export const Anchor = styled.a<AnchorProps>`
+  cursor: ${({ hrefLenght }) => hrefLenght.length < 1 && 'default'};
+`;
+
+
 export const Container = styled.div`
-  height: 30rem;
+  height: 25rem;
   max-width: 20rem;
   background-color: #fff;
   border-radius: .5rem;
@@ -24,9 +33,9 @@ export const ImageStyled = styled(Image)`
 export const Main = styled.main`
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   margin-top: 1rem;
-  padding: 1.5rem;
+  padding: 1rem;
   h3 {
     font-size: 1.2rem;
     font-weight: 500;

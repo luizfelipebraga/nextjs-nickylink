@@ -57,7 +57,7 @@ export function AudioVisualComponent() {
   ];
 
   const getCompanies = company.map((c, index) => {
-    return <CardCompany key={index} siteHref={c.href} image={c.image} title={c.title} description={c.description} />
+      return <CardCompany key={index} siteHref={c.href} image={c.image} title={c.title} description={c.description} />
   })
 
   return (

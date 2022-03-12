@@ -18,6 +18,7 @@ export const GlobalStyle = createGlobalStyle`
     --lightCyan: hsl(192, 70%, 51%);
     //Neutral
     --grayBlue: hsl(233, 8%, 62%);
+    --gray: #7a7a7a;
     --lightGrayBlue: hsl(220, 16%, 96%);
     --veryLightGray: hsl(0, 0%, 98%);
     --white: hsl(0, 0%, 100%);

@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Image from "next/image";
-import TwitterImg from '../../assets/fa-twitter.svg';
-import EmailImg from '../../assets/fa-email.svg';
+import TwitterImg from '../../assets/white/fa-twitter.svg';
+import EmailImg from '../../assets/white/fa-email.svg';
 import Logo from '../../assets/large-logo.png';
 import { Aside, BoxImage, Container, SocialMedias, TitleSection, HomeSection } from "../../styles/home/styles";
 import MarketingContent from "../../components/MarketingContent";

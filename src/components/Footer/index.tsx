@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Container, Grid, List, Main, ReservedRights } from "./styles";
-import Twitter from '../../assets/fa-twitter.svg';
-import Email from '../../assets/fa-email.svg';
-import Cellphone from '../../assets/fa-phone-solid.svg';
+import Twitter from '../../assets/white/fa-twitter.svg';
+import Email from '../../assets/white/fa-email.svg';
+import Cellphone from '../../assets/white/fa-phone-solid.svg';
 
 export function Footer() {
   return (

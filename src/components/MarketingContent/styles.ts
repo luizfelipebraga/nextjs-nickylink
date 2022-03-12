@@ -39,6 +39,7 @@ export const Main = styled.main`
 export const Topics = styled.div`
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   text-align: center;
   gap: 3rem;
 

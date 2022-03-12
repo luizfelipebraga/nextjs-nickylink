@@ -10,13 +10,17 @@ export const HomeSection = styled.section`
   min-height: 90vh;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0 150px;
+  padding: 100px 1rem 150px;
 `;
 
 export const TitleSection = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1500px) {
+    justify-content: center;
+  }
 
 `;
 export const Aside = styled.aside`
@@ -53,6 +57,10 @@ export const Title = styled.div`
 
 export const BoxImage = styled.div`
   width: 500px;
+
+  @media (max-width: 1500px) {
+    display: none;
+  }
 `;
 
 export const ImageStyled = styled(Image)`
@@ -64,6 +72,13 @@ export const SocialMedias = styled.div`
   display: flex;
   flex-direction: row;
   gap: 2rem;
+
+  @media (max-width: 1500px) {
+    max-width: 900px;
+    margin-inline: auto;
+    margin-top: 2rem;
+    padding-left: 2rem;
+  }
 
   a {
     display: flex;

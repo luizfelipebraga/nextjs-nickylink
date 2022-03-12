@@ -1,4 +1,8 @@
+import Image from "next/image";
 import { Container, Grid, List, Main, ReservedRights } from "./styles";
+import Twitter from '../../assets/fa-twitter.svg';
+import Email from '../../assets/fa-email.svg';
+import Cellphone from '../../assets/fa-phone-solid.svg';
 
 export function Footer() {
   return (
@@ -19,9 +23,9 @@ export function Footer() {
           <List>
             <span style={{ textAlign: 'center' }}>Contato</span>
             <ul>
-              <li>E-mail: <span>nky-contato@outlook.com</span></li>
-              <li>Tel: <span>+55 (35) 98812-6239</span></li>
-              <li>Twitter: <span>nyklink</span></li>
+              <li><Image src={Email} alt="Email logotipo" width={30} height={20} /> <span>nky-contato@outlook.com</span></li>
+              <li><Image src={Cellphone} alt="Cellphone logotipo" width={30} height={20} /> <span>+55 (35) 98812-6239</span></li>
+              <li><Image src={Twitter} alt="Twitter logotipo" width={30} height={20} /> <span>nyklink</span></li>
             </ul>
           </List>
 

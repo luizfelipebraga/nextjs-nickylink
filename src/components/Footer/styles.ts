@@ -28,9 +28,13 @@ export const List = styled.div`
   ul {
     margin-top: 1rem;
     li {
-      margin-top: 0.3rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      margin-top: 0.5rem;
       span {
         font-size: 1rem;
+        color: #949494;
       }
     }
   }

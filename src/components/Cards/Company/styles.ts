@@ -2,14 +2,22 @@ import styled from 'styled-components';
 import Image from 'next/image';
 
 export const Container = styled.div`
-  min-height: 10rem;
-  max-width: 20rem;
+  height: 30rem;
+  max-width: 22rem;
   background-color: #fff;
-  border-radius: 1rem;
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+
+  transition: transform .2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
 `;
 
 export const ImageStyled = styled(Image)`
-  border-radius: 1rem !important;
+  border-top-right-radius: .5rem !important;
+  border-top-left-radius: .5rem !important;
   object-fit: cover !important;
 `;
 
@@ -19,8 +27,13 @@ export const Main = styled.main`
   gap: 1.5rem;
   margin-top: 1rem;
   padding: 1.5rem;
-  h4 {
+  h3 {
+    font-size: 1.2rem;
     font-weight: 500;
     color: #000;
+  }
+
+  p {
+    font-size: .9rem;
   }
 `;

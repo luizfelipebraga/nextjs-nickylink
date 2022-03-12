@@ -12,5 +12,5 @@ export const Grid = styled.div`
   margin: 50px 0px 0px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 15px;
+  gap: 1rem;
 `;

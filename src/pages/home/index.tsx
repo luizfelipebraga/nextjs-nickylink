@@ -6,6 +6,7 @@ import Logo from '../../assets/large-logo.png';
 import { Aside, BoxImage, Container, SocialMedias, TitleSection, HomeSection } from "../../styles/home/styles";
 import MarketingContent from "../../components/MarketingContent";
 import ServiceContent from "../../components/ServiceContent";
+import { FormComponent } from "../../components/Form";
 
 const HomePage: NextPage = () => {
   return (
@@ -27,7 +28,7 @@ const HomePage: NextPage = () => {
 
         <SocialMedias>
           <a href="mailto:nky-contato@outlook.com" target="_blank" rel="noreferrer">
-            <Image src={EmailImg} alt="email" height={30} width={30} priority/>
+            <Image src={EmailImg} alt="email" height={30} width={30} priority />
           </a>
 
           <a href="https://twitter.com/nkylink" target="_blank" rel="noreferrer">
@@ -39,6 +40,8 @@ const HomePage: NextPage = () => {
       <MarketingContent />
 
       <ServiceContent />
+
+      <FormComponent />
 
     </Container>
   )

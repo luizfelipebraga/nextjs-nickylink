@@ -22,6 +22,7 @@ export const GlobalStyle = createGlobalStyle`
     --lightGrayBlue: hsl(220, 16%, 96%);
     --veryLightGray: hsl(0, 0%, 98%);
     --white: hsl(0, 0%, 100%);
+    --black: #000;
   }
   
     html, body, #root {

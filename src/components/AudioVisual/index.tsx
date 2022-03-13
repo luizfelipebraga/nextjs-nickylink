@@ -38,21 +38,21 @@ export function AudioVisualComponent() {
       href: 'https://www.remax.pt/',
       image: '/videos/thumb/reimax.png',
       title: 'Remax Portugal',
-      description: 'empresa bala'
+      description: 'RE/MAX Portugal tem vindo a consolidar a sua liderança. A força da marca, a eficiência do serviço e satisfação dos seus colaboradores têm vindo a ser reconhecidas e premiadas anualmente por várias entidades. '
     },
 
     {
       href: '',
       image: '/videos/thumb/rumo.png',
       title: 'Rumo ao Topo',
-      description: 'empresa bala'
+      description: 'Video para empresa Rumo ao Topo'
     },
 
     {
       href: 'https://diligentversion.pt/',
       image: '/videos/thumb/niuscup3.jpg',
       title: 'Niuscup',
-      description: 'empresa bala'
+      description: 'A NiusCup é uma organização 100% focada nos jogadores/atletas ESPORTS'
     },
   ];
 

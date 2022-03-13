@@ -3,9 +3,9 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 40px;
   position: fixed;
-  bottom: 30%;
-  left: auto;
-  right: 50px;
+  bottom: 43%;
+  left: 50px;
+  right: auto;
   z-index: 10;
 
   @media (max-width: 1500px) {

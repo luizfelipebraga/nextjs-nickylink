@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100%;
   height: 100%;
-  padding: 9rem 0;
+  padding-top: 9rem;
 `;
 
 export const Grid = styled.div`

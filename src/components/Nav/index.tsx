@@ -16,8 +16,8 @@ export function NavBar() {
 
         <Ul>
           <Link href="/home">Página Inicial</Link>
-          <Link href="/servicos">Serviços</Link>
-          <Link href="/portfolio">Portfolio</Link>
+          <Link href="#services">Serviços</Link>
+          <Link href="#portfolio">Portfolio</Link>
           <Link href="/sobre">Sobre</Link>
           <ContatoButton />
         </Ul>

@@ -61,7 +61,7 @@ export function AudioVisualComponent() {
   })
 
   return (
-    <Container>
+    <Container id="portfolio">
       <TitleComponent name="ÁudioVisual" subtitle="&#8595; Veja alguns dos meus trabalhos." />
       <Grid>
         <Fade left>

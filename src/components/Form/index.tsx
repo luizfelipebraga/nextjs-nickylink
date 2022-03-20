@@ -1,19 +1,87 @@
 import TitleComponent from "../Title"
-import { Container, Main, Form, Input, TextArea, WrappButton, Button } from "./styles"
+import { Container, Main, Form, Input, TextArea, WrappButton, Button, Select } from "./styles"
+
+import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useState } from "react";
 
 export function FormComponent() {
+  const [fullname, setFullName] = useState<string>('');
+  const [email, setEmail] = useState<string>('');
+  const [select, setSelect] = useState<string>('type');
+  const [message, setMessage] = useState<string>('');
+
+  const sendEmail = (event: any) => {
+    event.preventDefault();
+
+    emailjs.sendForm('service_beg4kfb', 'gmail', event.target, 'user_WRCVefRiFlT2Ki4K4A3tR')
+      .then(() => {
+        const functionThatReturnPromise = () => new Promise(resolve => setTimeout(resolve, 2000));
+        toast.promise(functionThatReturnPromise, {
+          pending: 'Loading',
+          success: 'Email has sent, thank you!',
+          error: 'Something happened, try again.'
+        })
+      }, (error) => {
+        toast.error("Something happened, try again.");
+        console.error(error.text);
+      });
+  };
+
+  const options = [
+    {
+      disabled: true,
+      defaultValue: 'type',
+      label: 'Qual serviço você quer contratar?',
+      value: 'type',
+    },
+    {
+      label: 'Full Stack Job',
+      value: 'FULL STACK JOB',
+    },
+
+    {
+      label: 'Back-end Job',
+      value: 'BACKEND JOB',
+    },
+
+    {
+      label: 'Front-end Job',
+      value: 'FRONTEND JOB',
+    },
+
+    {
+      label: 'Other',
+      value: 'OTHERS',
+    }
+  ]
+
   return (
-    <Container>
+    <Container id="form">
       <Main>
-        <TitleComponent name="Formul&aacute;rio" style={{color: '#000'}}/>
-        <Form>
-          <Input id="fullname" type="text" placeholder="Nome e Sobrenome" required />
+        <TitleComponent name="Formul&aacute;rio" style={{ color: '#000' }} />
+        <Form onSubmit={sendEmail}>
+          <Input id="fullname" type="text" placeholder="Nome Completo" required />
           <Input id="email" type="email" placeholder="Email" required />
           <Input id="tel" type="text" placeholder="Telefone" required />
-          <TextArea id="about" placeholder="Observações" required />
-          {/* <WrappButton> */}
-            <Button type="submit">Enviar</Button>
-          {/* </WrappButton> */}
+
+          <Select
+            required
+            name="type"
+            id="type"
+            placeholder="Select your Message"
+            value={select}
+            onChange={event => setSelect(event.target.value)}>
+
+            {options.map((op, index) => (
+              <option key={index} value={op.value} disabled={op.disabled} defaultValue={op.defaultValue}>{op.label}</option>
+            )
+            )}
+          </Select>
+
+          <TextArea id="about" placeholder="Observações" rows={3} cols={50} />
+          <Button type="submit">Enviar</Button>
         </Form>
       </Main>
     </Container>

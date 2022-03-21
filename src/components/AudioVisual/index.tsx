@@ -49,7 +49,7 @@ export function AudioVisualComponent() {
     },
 
     {
-      href: 'https://diligentversion.pt/',
+      href: 'https://twitter.com/niuscup_esports',
       image: '/videos/thumb/niuscup3.jpg',
       title: 'Niuscup',
       description: 'A NiusCup é uma organização 100% focada nos jogadores/atletas ESPORTS'

@@ -17,10 +17,16 @@ export const Container = styled.div`
   border-radius: .5rem;
   margin-bottom: 2rem;
 
-  transition: transform .2s ease-in-out;
+  transition: all .2s ease-in-out;
 
   &:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
+
+    img {
+      transform: scale(1.2);
+      border-top-right-radius: .5rem !important;
+      border-top-left-radius: .5rem !important;
+    }
   }
 `;
 
@@ -28,6 +34,12 @@ export const ImageStyled = styled(Image)`
   border-top-right-radius: .5rem !important;
   border-top-left-radius: .5rem !important;
   object-fit: cover !important;
+
+  transition: transform .3s ease-in-out;
+
+  /* &:hover {
+    transform: scale(1.5);
+  } */
 `;
 
 export const Main = styled.main`

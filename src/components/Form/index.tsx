@@ -29,6 +29,7 @@ export function FormComponent() {
       });
   };
 
+
   const options = [
     {
       disabled: true,
@@ -37,25 +38,40 @@ export function FormComponent() {
       value: 'type',
     },
     {
-      label: 'Full Stack Job',
-      value: 'FULL STACK JOB',
+      label: 'Edição',
+      value: 'EDICAO',
     },
 
     {
-      label: 'Back-end Job',
-      value: 'BACKEND JOB',
+      label: 'Produção',
+      value: 'PRODUCAO',
     },
 
     {
-      label: 'Front-end Job',
-      value: 'FRONTEND JOB',
+      label: 'Modelagem',
+      value: 'MODELAGEM',
     },
 
     {
-      label: 'Other',
-      value: 'OTHERS',
+      label: 'Fotografia',
+      value: 'FOTOGRAFIA',
+    },
+
+    {
+      label: 'Rede Social',
+      value: 'REDESOCIAL',
+    },
+
+    {
+      label: 'Outros',
+      value: 'OUTROS',
     }
   ]
+
+  const getServices = options.map((op, index) => (
+    <option key={index} value={op.value} disabled={op.disabled} defaultValue={op.defaultValue}>{op.label}</option>
+  ))
+
 
   return (
     <Container id="form">
@@ -74,10 +90,7 @@ export function FormComponent() {
             value={select}
             onChange={event => setSelect(event.target.value)}>
 
-            {options.map((op, index) => (
-              <option key={index} value={op.value} disabled={op.disabled} defaultValue={op.defaultValue}>{op.label}</option>
-            )
-            )}
+            {getServices}
           </Select>
 
           <TextArea id="about" placeholder="Observações" rows={3} cols={50} />

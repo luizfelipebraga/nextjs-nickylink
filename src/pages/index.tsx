@@ -6,7 +6,7 @@ function IndexPage() {
         <title>Nickylink | Portfolio</title>
         <meta
           name="Nickylink Portfolio"
-          content="A website to show nickylink's skill"
+          content="A website to show nickylink's skills"
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" href="/images/logo1.png" />

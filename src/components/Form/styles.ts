@@ -48,7 +48,7 @@ export const Select = styled.select`
   transition: all 0.2s ease-in-out;
 
   &:focus {
-    box-shadow: 0 0 0 0.6pt #9d9d9d;
+    box-shadow: 0 0 0 0.598pt #9d9d9d;
   }
 `;
 

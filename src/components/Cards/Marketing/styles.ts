@@ -37,7 +37,7 @@ export const TitleDescription = styled.div`
 export const Title = styled.h4`
   text-align: center;
   text-transform: capitalize;
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
   font-weight: 500;
 `;
 

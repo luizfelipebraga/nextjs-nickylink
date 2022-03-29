@@ -29,6 +29,8 @@ export const Input = styled.input`
   border-radius: 5px;
   border: 1px solid #9d9d9d;
 
+  transition: all 0.2s ease-in-out;
+
   &:focus {
     border-color:var(--black);
   }
@@ -42,6 +44,8 @@ export const Select = styled.select`
   padding: 1rem;
   border: 1px solid #9d9d9d;
   border-radius: 5px;
+
+  transition: all 0.2s ease-in-out;
 
   &:focus {
     box-shadow: 0 0 0 0.6pt #9d9d9d;

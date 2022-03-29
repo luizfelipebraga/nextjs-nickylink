@@ -9,6 +9,7 @@ import { useState } from "react";
 export function FormComponent() {
   const [fullname, setFullName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
+  const [telefone, setTelefone] = useState<string>('');
   const [select, setSelect] = useState<string>('type');
   const [message, setMessage] = useState<string>('');
 
@@ -78,9 +79,9 @@ export function FormComponent() {
       <Main>
         <TitleComponent name="Formul&aacute;rio" style={{ color: '#000' }} />
         <Form onSubmit={sendEmail}>
-          <Input id="fullname" type="text" placeholder="Nome Completo" required />
-          <Input id="email" type="email" placeholder="Email" required />
-          <Input id="tel" type="text" placeholder="Telefone" required />
+          <Input id="fullname" type="text" placeholder="Nome Completo" value={fullname} onChange={event => setFullName(event.target.value)} required />
+          <Input id="email" type="email" placeholder="Email" value={email} onChange={event => setEmail(event.target.value)}required />
+          <Input id="tel" type="text" placeholder="Telefone" value={telefone} onChange={event => setTelefone(event.target.value)} required />
 
           <Select
             required
@@ -93,7 +94,7 @@ export function FormComponent() {
             {getServices}
           </Select>
 
-          <TextArea id="about" placeholder="Observações" rows={3} cols={50} />
+          <TextArea id="about" placeholder="Observações" rows={3} cols={50} value={message} onChange={event => setMessage(event.target.value)} />
           <Button type="submit">Enviar</Button>
         </Form>
       </Main>

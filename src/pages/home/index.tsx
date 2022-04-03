@@ -35,7 +35,7 @@ const HomePage: NextPage = () => {
           </a>
 
           <a href="https://twitter.com/nkylink" target="_blank" rel="noreferrer">
-            <Image src={TwitterImg} alt="twitter" height={30} width={30} />
+            <Image src={TwitterImg} alt="twitter" height={30} width={30} priority />
           </a>
         </SocialMedias>
       </HomeSection>

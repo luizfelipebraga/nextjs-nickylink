@@ -35,14 +35,14 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         &::-webkit-scrollbar {
-            width: 2rem;
+            width: .8rem;
         }
         &::-webkit-scrollbar-track {
             background: var(--bg);
         }
         &::-webkit-scrollbar-thumb {
             background-color: #9d9d9d;
-            width: 2rem;    
+            width: .3rem;    
             border-radius: 1rem;
         }
     }

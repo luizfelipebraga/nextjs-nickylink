@@ -7,7 +7,7 @@ import { Aside, BoxImage, Container, SocialMedias, TitleSection, HomeSection } f
 import MarketingContent from "../../components/MarketingContent";
 import ServiceContent from "../../components/ServiceContent";
 import { FormComponent } from "../../components/Form";
-import Tilty from "react-tilty";
+// import Tilty from "react-tilty";
 
 const HomePage: NextPage = () => {
   return (
@@ -22,11 +22,11 @@ const HomePage: NextPage = () => {
             </div>
           </Aside>
 
-          <Tilty reverse axis="x" scale={1.1} perspective={900} reset={true} transformStyle='preserve-3d' >
+          {/* <Tilty reverse axis="x" scale={1.1} perspective={900} reset={true} transformStyle='preserve-3d' > */}
             <BoxImage>
               <Image src={Logo} alt="photo" priority />
             </BoxImage>
-          </Tilty>
+          {/* </Tilty> */}
         </TitleSection>
 
         <SocialMedias>

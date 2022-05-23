@@ -26,7 +26,7 @@ export const BoxImage = styled.div`
   }
 `;
 
-export const Ul = styled.ul`
+export const Li = styled.li`
   display: flex;
   gap: 2rem;
   a:not(:last-child) {

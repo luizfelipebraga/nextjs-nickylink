@@ -22,7 +22,7 @@ export function CardCompany(props: CardCompanyProps) {
           </Container>
         </Anchor>
       ) : (
-        <Anchor href={void(0)} rel="noreferrer" hrefLenght={props.siteHref}>
+        <Anchor href={'/'} rel="noreferrer" hrefLenght={props.siteHref}>
           <Container>
             <ImageStyled src={props.image} alt={props.title} width={400} height={250} loading="eager"/>
             <Main>

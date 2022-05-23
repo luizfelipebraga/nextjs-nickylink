@@ -95,7 +95,7 @@ export function FormComponent() {
           </Select>
 
           <TextArea id="about" placeholder="Observações" rows={3} cols={50} value={message} onChange={event => setMessage(event.target.value)} />
-          <Button type="submit">Enviar</Button>
+          <Button type="submit" value="Enviar"/>
         </Form>
       </Main>
     </Container>

@@ -70,7 +70,7 @@ export const WrappButton = styled.div`
   flex-wrap: wrap;
 `;
 
-export const Button = styled.a`
+export const Button = styled.input`
   background: #f8f8f8;
   background: var(--black);
   color: var(--white);
@@ -84,6 +84,7 @@ export const Button = styled.a`
   font-weight: bold;
   z-index: 1;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 
   &:hover {
     background: #f8f8f8;

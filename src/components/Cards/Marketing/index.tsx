@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Container, Description, TitleDescription, Title, BoxImage } from "./styles"
+import { Container, Description, TitleDescription, Title } from "./styles"
 
 type CardProps = {
   img: string;
@@ -11,7 +11,7 @@ type CardProps = {
 export default function MarketingCard({ img, title, description }: CardProps) {
   return (
     <Container>
-        <img src={img} alt="imagem para negócio" />
+      <Image src={img} alt="business image" width={450} height={350}/>
       <TitleDescription>
         <Title>{title}</Title>
         <Description>{description}</Description>

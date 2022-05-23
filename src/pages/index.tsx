@@ -5,13 +5,11 @@ function IndexPage() {
       <Head>
         <title>Nickylink | Portfolio</title>
         <meta
-          name="Nickylink Portfolio"
+          name="description"
           content="A website to show nickylink's skills"
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="icon" href="/images/logo1.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=optional" rel="stylesheet" />
       </Head>
   )
 }

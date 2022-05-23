@@ -9,13 +9,13 @@ export function FixedSocialsMedias() {
       <List>
         <li>
           <a href="https://twitter.com/nkylink" target="_blank" rel="noreferrer">
-            <Image src={Twitter} width={40} height={50} />
+            <Image src={Twitter} width={40} height={50} alt="Twitter logo"/>
           </a>
         </li>
 
         <li>
           <a href="mailto:nky-contato@outlook.com" target="_blank" rel="noreferrer">
-            <Image src={Email} width={40} height={50}/>
+            <Image src={Email} width={40} height={50} alt="Email logo"/>
           </a>
         </li>
       </List>

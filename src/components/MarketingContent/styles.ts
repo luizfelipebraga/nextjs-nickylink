@@ -33,6 +33,7 @@ export const Main = styled.main`
     margin-top: 2rem;
     font-weight: 400;
     text-align: center;
+    color: #3f3f44;
   }
 `;
 

@@ -57,6 +57,7 @@ export const Title = styled.div`
 
 export const BoxImage = styled.div`
   width: 500px;
+  height: auto;
 
   @media (max-width: 1500px) {
     display: none;

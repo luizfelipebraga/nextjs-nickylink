@@ -2,25 +2,31 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from '../../assets/logo1.png';
 import { ContatoButton } from "../Contato";
-import { Header, Nav, Ul, BoxImage } from "./styles";
+import { Header, Nav, Li, BoxImage } from "./styles";
 
 export function NavBar() {
   return (
     <Header>
       <Nav>
-        <Link href="/home">
+        <Link href="/home" passHref>
           <BoxImage>
-            <Image src={Logo} alt="Logo" loading="eager" priority width={130} height={80}/>
+            <Image src={Logo}
+              alt="Logo"
+              loading="eager"
+              width='100%'
+              height='90rem' />
           </BoxImage>
         </Link>
 
-        <Ul>
-          <Link href="/home">Página Inicial</Link>
-          <Link href="#services">Serviços</Link>
-          <Link href="#portfolio">Portfolio</Link>
-          <Link href="/sobre">Sobre</Link>
-          <ContatoButton />
-        </Ul>
+        <ul>
+          <Li>
+            <Link href="/home">Página Inicial</Link>
+            <Link href="#services">Serviços</Link>
+            <Link href="#portfolio">Portfolio</Link>
+            <Link href="/sobre">Sobre</Link>
+            <ContatoButton />
+          </Li>
+        </ul>
       </Nav>
     </Header >
   )

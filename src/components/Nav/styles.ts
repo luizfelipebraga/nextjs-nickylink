@@ -18,6 +18,8 @@ export const Nav = styled.nav`
 `;
 
 export const BoxImage = styled.div`
+  width: 9rem;
+  height: auto;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 

@@ -24,7 +24,7 @@ const HomePage: NextPage = () => {
 
           {/* <Tilty reverse axis="x" scale={1.1} perspective={900} reset={true} transformStyle='preserve-3d' > */}
             <BoxImage>
-              <Image src={Logo} alt="photo" priority />
+              <Image src={Logo} alt="photo" priority layout="fixed"/>
             </BoxImage>
           {/* </Tilty> */}
         </TitleSection>

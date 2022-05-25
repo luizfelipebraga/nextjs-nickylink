@@ -13,8 +13,8 @@ export function NavBar() {
             <Image src={Logo}
               alt="Logo"
               loading="eager"
-              width='100%'
-              height='90rem' />
+              layout="responsive"
+            />
           </BoxImage>
         </Link>
 

@@ -9,7 +9,7 @@ function IndexPage() {
           content="A website to show nickylink's skills"
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=optional" rel="stylesheet" />
+        <link rel="icon" href="/images/logo1.png" />
       </Head>
   )
 }

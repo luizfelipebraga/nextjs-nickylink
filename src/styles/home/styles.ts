@@ -26,8 +26,6 @@ export const TitleSection = styled.section`
 export const Aside = styled.aside`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 1rem;
 
   span {
     font-weight: 500;

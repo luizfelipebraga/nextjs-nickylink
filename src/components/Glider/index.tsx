@@ -1,22 +1,30 @@
-import React from "react" 
+import React from 'react';
+import dynamic from 'next/dynamic';
 import { Container } from "./styles";
 import Glider from "react-glider";
 import "glider-js/glider.min.css";
-import { VideoComponent } from "../Video";
+const VideoComponent = dynamic(() => import("../Video"));
 React.useLayoutEffect = React.useEffect
 
-export function Slider() {
+export default function Slider() {
+
+  const videoURLS: string[] = [
+    "https://vimeo.com/720840212",
+    "https://vimeo.com/720840257",
+    "https://vimeo.com/720840290",
+    "https://vimeo.com/720840392",
+    "https://vimeo.com/720840333",
+    "https://vimeo.com/720839857",
+    "https://vimeo.com/720839817",
+
+  ]
+
   return (
     <Container>
       <Glider slidesToShow={1} hasArrows hasDots>
-        <VideoComponent video='/videos/Empresa/diligente.m4v' />
-        <VideoComponent video='/videos/Empresa/logo-zoom.m4v' />
-        <VideoComponent video='/videos/Empresa/RemaxPromo.m4v' />
-        <VideoComponent video='/videos/Empresa/RumoAoTopoLivestream.mp4' />
-        <VideoComponent video='/videos/Empresa/Slide-Conferecondominios.m4v' />
-        <VideoComponent video='/videos/Empresa/spain.mp4' />
-        <VideoComponent video='/videos/BornIntro.mp4' />
-        <VideoComponent video='/videos/liga-brasileira.mp4' />
+        {videoURLS.map((v, index) => {
+          return <VideoComponent key={index} video={v} />
+        })}
       </Glider>
     </Container>
   );

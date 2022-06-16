@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@fortawesome/fontawesome-free': ^6.0.0
+  '@slightlyoff/lite-vimeo': ^0.1.2
   '@types/jest': ^27.4.1
   '@types/node': 17.0.19
   '@types/react': 17.0.39
@@ -17,6 +18,7 @@ specifiers:
   react: 17.0.2
   react-dom: 17.0.2
   react-glider: ^3.0.3
+  react-player: ^2.10.1
   react-reveal: ^1.2.2
   react-tilty: ^2.0.3
   react-toastify: ^8.2.0
@@ -25,12 +27,14 @@ specifiers:
 
 dependencies:
   '@fortawesome/fontawesome-free': 6.1.1
+  '@slightlyoff/lite-vimeo': 0.1.2
   cloudinary-react: 1.7.2_react@17.0.2
   emailjs-com: 3.2.0
   next: 12.1.0_sfoxds7t5ydpegc3knd667wn6m
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-glider: 3.1.0_sfoxds7t5ydpegc3knd667wn6m
+  react-player: 2.10.1_react@17.0.2
   react-reveal: 1.2.2_react@17.0.2
   react-tilty: 2.0.3_react@17.0.2
   react-toastify: 8.2.0_sfoxds7t5ydpegc3knd667wn6m
@@ -849,6 +853,10 @@ packages:
       '@sinonjs/commons': 1.8.3
     dev: true
 
+  /@slightlyoff/lite-vimeo/0.1.2:
+    resolution: {integrity: sha512-KkmMgogBfAHyk+Q1MvDWmTmif5uYIKzWLoW/vbxLzafC4GldU1ssKoo7VZ+cBtH19RFHFVrxy+PMd7IRghAT6Q==}
+    dev: false
+
   /@tootallnate/once/1.1.2:
     resolution: {integrity: sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==}
     engines: {node: '>= 6'}
@@ -1587,7 +1595,6 @@ packages:
   /deepmerge/4.2.2:
     resolution: {integrity: sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==}
     engines: {node: '>=0.10.0'}
-    dev: true
 
   /define-properties/1.1.4:
     resolution: {integrity: sha512-uckOqKcfaVvtBdsVkdPv3XjveQJsNQqmhXgRi8uhvWWuPYZCNlzT8qAyblUgNoXdHdjMTzAqeGjAoli8f+bzPA==}
@@ -3183,6 +3190,10 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
+  /load-script/1.0.0:
+    resolution: {integrity: sha512-kPEjMFtZvwL9TaZo0uZ2ml+Ye9HUMmPwbYRJ324qF9tqMejwykJ5ggTyvzmrbBeapCAbk98BSbTeovHEEP1uCA==}
+    dev: false
+
   /locate-path/2.0.0:
     resolution: {integrity: sha512-NCI2kiDkyR7VeEKm27Kda/iQHyKJe1Bu0FlTbYp3CqJu+9IFe9bLyAjMxf5ZDDbEg+iMPzB5zYyUTSm8wVTKmA==}
     engines: {node: '>=4'}
@@ -3230,6 +3241,10 @@ packages:
     dependencies:
       tmpl: 1.0.5
     dev: true
+
+  /memoize-one/5.2.1:
+    resolution: {integrity: sha512-zYiwtZUcYyXKo/np96AGZAckk+FWWsUdJ3cHGGmld7+AhvcWmQyGCYUh1hc4Q/pkOhb65dQR/pqCyK0cOaHz4Q==}
+    dev: false
 
   /merge-stream/2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
@@ -3629,6 +3644,10 @@ packages:
       react: 17.0.2
       scheduler: 0.20.2
 
+  /react-fast-compare/3.2.0:
+    resolution: {integrity: sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==}
+    dev: false
+
   /react-glider/3.1.0_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-QLwFp6MwIXFQsCv2dQdKnrIyXmyJFBgx9ze3xoVO7DLea0XmzX/qSl+Ii8rCN+eamt3y/+OV+AB/jDc2Bdx8GQ==}
     peerDependencies:
@@ -3647,6 +3666,19 @@ packages:
   /react-is/17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
     dev: true
+
+  /react-player/2.10.1_react@17.0.2:
+    resolution: {integrity: sha512-ova0jY1Y1lqLYxOehkzbNEju4rFXYVkr5rdGD71nsiG4UKPzRXQPTd3xjoDssheoMNjZ51mjT5ysTrdQ2tEvsg==}
+    peerDependencies:
+      react: '>=16.6.0'
+    dependencies:
+      deepmerge: 4.2.2
+      load-script: 1.0.0
+      memoize-one: 5.2.1
+      prop-types: 15.8.1
+      react: 17.0.2
+      react-fast-compare: 3.2.0
+    dev: false
 
   /react-reveal/1.2.2_react@17.0.2:
     resolution: {integrity: sha512-JCv3fAoU6Z+Lcd8U48bwzm4pMZ79qsedSXYwpwt6lJNtj/v5nKJYZZbw3yhaQPPgYePo3Y0NOCoYOq/jcsisuw==}

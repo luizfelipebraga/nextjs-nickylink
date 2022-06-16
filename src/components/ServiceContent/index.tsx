@@ -1,8 +1,9 @@
 import TitleComponent from "../Title";
 import { Container, Main, Subtitle } from "./styles";
 import Fade from 'react-reveal/Fade';
-import { Slider } from "../Glider";
+const Slider = dynamic(() => import("../Glider"));
 import { AudioVisualComponent } from "../AudioVisual";
+import dynamic from "next/dynamic";
 
 export default function ServiceContent() {
   return (
@@ -19,7 +20,6 @@ export default function ServiceContent() {
             </p>
           </Subtitle>
         </Fade>
-
         <AudioVisualComponent />
       </Main>
     </Container >

@@ -1,17 +1,17 @@
 import React, { VideoHTMLAttributes } from "react";
+import ReactPlayer from "react-player";
 import { Video } from "./styles";
 
 interface VideoProps extends VideoHTMLAttributes<HTMLVideoElement> {
   video: string;
 };
 
-export function VideoComponent({ ...props }: VideoProps) {
+export default function VideoComponent({ ...props }: VideoProps) {
   return (
-    <Video
+    <ReactPlayer
       autoPlay
       loop
-      muted>
-      <source src={props.video} type="video/mp4" />
-    </Video>
+      muted
+      url={props.video} />
   )
 }
